@@ -19,14 +19,6 @@
 | ANNORDAY | 2020-11-3 | 纪念日 |
 | BIRTHDAT | 2002-01-16 | 生日 |
 
-| Name | Value | 说明 |
-| ---- | ---- | ---- |
-| STUID | 11120211111111 | 学号 |
-| PW | ****** | 密码 |
-| SERVER | on/off | 是否开启server酱|
-| SCKEY | SCU111... | 若SERVER=on，则填写自己的sckey；否则空着就行 |
-| MAIL_NOTICE | on/off | 是否开启邮箱推送 |
-| MAILBOX | 1@1.com | 用于接收通知的邮箱 |
 
 4. 点击Action，之后开启Action
 ![](https://raw.githubusercontent.com/vveg26/ImageHosting/master/BlogImg/202209071720479.png)
