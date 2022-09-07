@@ -7,6 +7,7 @@
 ![step1](https://raw.githubusercontent.com/vveg26/ImageHosting/master/BlogImg/202209071709248.png)
 ![step2](https://raw.githubusercontent.com/vveg26/ImageHosting/master/BlogImg/202209071712529.png)
 3. 依次如下添加各个字段
+
 | Name | Value | 说明 |
 | ---- | ---- | ---- |
 | APPID | xxxxxxxx | vx测试号中获取 |
@@ -17,6 +18,16 @@
 | NAME | 琪琪 | 名字 |
 | ANNORDAY | 2020-11-3 | 纪念日 |
 | BIRTHDAT | 2002-01-16 | 生日 |
+
+| Name | Value | 说明 |
+| ---- | ---- | ---- |
+| STUID | 11120211111111 | 学号 |
+| PW | ****** | 密码 |
+| SERVER | on/off | 是否开启server酱|
+| SCKEY | SCU111... | 若SERVER=on，则填写自己的sckey；否则空着就行 |
+| MAIL_NOTICE | on/off | 是否开启邮箱推送 |
+| MAILBOX | 1@1.com | 用于接收通知的邮箱 |
+
 4. 点击Action，之后开启Action
 ![](https://raw.githubusercontent.com/vveg26/ImageHosting/master/BlogImg/202209071720479.png)
 5. 可以修改.github/workflow/main.yaml中的文件自己修改高级内容，第一次运行可以随意修改一下,即可发送一次
