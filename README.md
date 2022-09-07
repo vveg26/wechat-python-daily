@@ -2,6 +2,7 @@
 给女友的每日推送
 ## 利用GitHubAction实现每日定时发送微信推送
 ## 使用教程
+每天九点定时发送
 1. Fork我的仓库
 2. 按如下操作填写相应内容
 ![step1](https://raw.githubusercontent.com/vveg26/ImageHosting/master/BlogImg/202209071709248.png)
