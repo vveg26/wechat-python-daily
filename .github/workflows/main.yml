@@ -29,6 +29,7 @@ jobs:
     - name: SignIn
       run: |
         python ./wechatdailysend.py
+        
       #env:
         #STUID: ${{ secrets.STUID }}
         #PW: ${{ secrets.PW }}
