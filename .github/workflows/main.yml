@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a variety of Python versions
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Test
+name: Send
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: 15 0-11/3 * * *
+    - cron: 0 9 * * *
 
 jobs:
   build:
@@ -26,14 +26,17 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: SignIn
+    - name: runpy
       run: |
         python ./wechatdailysend.py
         
-      #env:
-        #STUID: ${{ secrets.STUID }}
-        #PW: ${{ secrets.PW }}
-        #SERVER: ${{ secrets.SERVER }}
-        #SCKEY: ${{ secrets.SCKEY }}
-        #MAIL_NOTICE: ${{ secrets.MAI_NOTICE }}
-        #MAILBOX: ${{ secrets.MAILBOX }}
+      env:
+        APPID: ${{ secrets.APPID }}
+        APPSECRET: ${{ secrets.APPSECRET }}
+        TEMPLATEID: ${{ secrets.TEMPLATEID }}
+        OPENID: ${{ secrets.OPENID }}
+        CITY: ${{ secrets.CITY }}
+        NAME: ${{ secrets.NAME }}
+        ANNORDAY: ${{ secrets.ANNORDAY }}
+        BIRTHDAT: ${{ secrets.BIRTHDAT }}
+
